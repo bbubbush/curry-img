@@ -44,7 +44,7 @@ public class GoogleTranslateService implements TranslateService {
       translate = TranslateOptions
         .newBuilder()
         .setCredentials(
-          ServiceAccountCredentials.fromStream(new ClassPathResource("google-translate-key").getInputStream()))
+          ServiceAccountCredentials.fromStream(new ClassPathResource("google-translate-key.json").getInputStream()))
         .build()
         .getService();
     } catch (IOException e) {
