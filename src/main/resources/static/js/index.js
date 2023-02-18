@@ -1,7 +1,7 @@
 let isLoading = false;
 
 window.addEventListener('keyup', e => {
-  if (e.keyCode != 13) {
+  if (e.keyCode !== 13) {
     return;
   }
   translateKeyword();
@@ -9,7 +9,7 @@ window.addEventListener('keyup', e => {
 
 function translateKeyword() {
   const keyword = document.getElementById('schKeyword').value;
-  if (keyword.length == 0) {
+  if (keyword.length === 0) {
     alert('검색어를 입력하세요');
     document.getElementById('schKeyword').focus;
     return;
@@ -22,7 +22,7 @@ function translateKeyword() {
     return;
   }
   isLoading = true;
-  fetch(`http://localhost:8080/translate/arabic?${query}`)
+  fetch(`/translate/arabic?${query}`)
       .then((res) => res.json())
       .then((data) => {
         isLoading = false;
