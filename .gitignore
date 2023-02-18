@@ -38,5 +38,7 @@ out/
 
 src/main/resources/*.yaml
 src/main/resources/*.txt
+src/main/resources/*.json
 src/test/resources/*.yaml
 src/test/resources/*.yaml
+src/main/resources/*.json
