@@ -38,3 +38,5 @@ out/
 
 src/main/resources/*.yaml
 src/main/resources/*.txt
+src/test/resources/*.yaml
+src/test/resources/*.yaml
